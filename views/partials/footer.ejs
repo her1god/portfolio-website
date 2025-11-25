@@ -1,0 +1,94 @@
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-800 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Footer Content -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      
+      <!-- Brand & Description -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-3">
+          her1god
+        </h3>
+        <p class="text-slate-400 text-sm">
+          Transforming raw data into actionable insights. Building scalable data pipelines and backend systems.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="text-center">
+        <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+        <div class="flex flex-col space-y-2">
+          <a href="#about" class="text-slate-400 hover:text-cyan-400 transition text-sm">About</a>
+          <a href="#skills" class="text-slate-400 hover:text-cyan-400 transition text-sm">Skills</a>
+          <a href="#experience" class="text-slate-400 hover:text-cyan-400 transition text-sm">Experience</a>
+          <a href="#projects" class="text-slate-400 hover:text-cyan-400 transition text-sm">Projects</a>
+        </div>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="text-center md:text-right">
+        <h4 class="text-white font-semibold mb-3">Connect With Me</h4>
+        <div class="flex justify-center md:justify-end space-x-4">
+          <a href="<%= data.profile.contact.github %>" target="_blank" rel="noopener noreferrer" 
+             class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white transition-all hover:scale-110">
+            <i class="fab fa-github text-lg"></i>
+          </a>
+          <a href="<%= data.profile.contact.linkedin %>" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white transition-all hover:scale-110">
+            <i class="fab fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="mailto:<%= data.profile.contact.email %>"
+             class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white transition-all hover:scale-110">
+            <i class="fas fa-envelope text-lg"></i>
+          </a>
+          <a href="https://wa.me/<%= data.profile.contact.phone %>" target="_blank" rel="noopener noreferrer"
+             class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white transition-all hover:scale-110">
+            <i class="fab fa-whatsapp text-lg"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Divider -->
+    <div class="border-t border-slate-800 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-slate-500 text-sm text-center md:text-left mb-4 md:mb-0">
+          &copy; <%= new Date().getFullYear() %> <span class="text-cyan-400 font-semibold"><%= data.profile.name %></span>. All rights reserved.
+        </p>
+        <p class="text-slate-500 text-sm">
+          Built with <span class="text-red-500">♥</span> using <span class="text-cyan-400">Node.js</span>, <span class="text-cyan-400">Express</span> & <span class="text-cyan-400">Tailwind CSS</span>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full shadow-lg hover:shadow-2xl transition-all opacity-0 pointer-events-none hover:scale-110 z-40">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // Back to top button
+  const backToTopBtn = document.getElementById('backToTop');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+      backToTopBtn.classList.add('opacity-100');
+    } else {
+      backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+      backToTopBtn.classList.remove('opacity-100');
+    }
+  });
+  
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
