@@ -12,7 +12,7 @@ const data = {
       email: "heripanca33@gmail.com",
       linkedin: "https://linkedin.com/in/her1god",
       github: "https://github.com/her1god",
-      phone: "082211470202" // Format display button WA
+      phone: "6282211470202" // Format display button WA
     }
   },
   skills: [
@@ -72,7 +72,7 @@ const data = {
       category: "Data Analysis",
       tech: ["Python", "Pandas", "Web Scraping", "Data Cleaning", "Content-Based Filtering", "Scikit-Learn", "Cosine Similarity", "TF-IDF", "Tableau"],
       description: "Mengembangkan pipeline data untuk mengumpulkan, membersihkan, dan menganalisis konten TikTok, lalu menerapkan algoritma content-based filtering untuk menyarankan strategi pemasaran afiliasi. Sistem membantu menentukan konten yang paling relevan untuk segmen audiens tertentu dan memprioritaskan produk afiliasi berdasar kecocokan konten. Hasilnya: rekomendasi yang lebih tertarget untuk kampanye pemasaran.",
-      link: "#"
+      link: "https://public.tableau.com/views/OptimisasiPemasaranAfiliasiTikTokContent-BasedFiltering/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
     },
     {
       title: "Analisis Data Olimpiade (1896-2016)",
@@ -86,7 +86,7 @@ const data = {
       category: "Data Engineering & Analysis",
       tech: ["Microsoft Excel", "MySQL", "Python", "Tableau", "VPN", "Web Scraping", "Dashboard", "Data Warehousing"],
       description: "Proyek implementasi ETL (Extract, Transform, Load) otomatis. Mengambil data mentah dari dataset Goodreads, membersihkannya, dan memuatnya ke database PostgreSQL untuk analisis terpusat.",
-      link: "https://gastrodiplomasi.kemlu.go.id/"
+      link: "https://gastrodiplomasi.kemlu.go.id/dashboard"
     },
     {
       title: "ETL Pipeline with Apache Airflow",
@@ -107,7 +107,7 @@ const data = {
       category: "Web Dev",
       tech: ["Express.js", "Leaflet", "MongoDB", "REST API", "WebGIS", "OSRM"],
       description: "Aplikasi obrolan real-time menggunakan implementasi Socket Programming. Memungkinkan pertukaran pesan instan antar pengguna dengan latensi rendah.",
-      link: "https://github.com/her1god/WebGIS-Futsal-Padang"
+      link: "https://webgis-futsal-padang.azurewebsites.net/"
     },
     {
       title: "Real-time Chat App",
